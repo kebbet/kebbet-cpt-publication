@@ -5,9 +5,9 @@
  * @package kebbet-cpt-publication
  */
 
-namespace cpt\kebbet\publication\admincolumns;
+namespace kebbet\cpt\publication\admincolumns;
 
-use const cpt\kebbet\publication\POSTTYPE;
+use const kebbet\cpt\publication\POSTTYPE;
 
 /**
  * Column orders (set image first)

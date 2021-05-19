@@ -5,9 +5,9 @@
  * @package kebbet-cpt-publication
  */
 
-namespace cpt\kebbet\publication\at_a_glance;
+namespace kebbet\cpt\publication\at_a_glance;
 
-use const cpt\kebbet\publication\POSTTYPE;
+use const kebbet\cpt\publication\POSTTYPE;
 
 /**
  * Adds post-type info to 'At a Glance'-dashboard widget.

@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name: Kebbet plugins - Custom Post Type: Publication
- * Plugin URI:
+ * Plugin URI: https://github.com/kebbet/kebbet-cpt-publication
  * Description: Registers a Custom Post Type.
- * Version: 20210519.01
+ * Version: 20210519.02
  * Author: Erik Betshammar
  * Author URI: https://verkan.se
  *
  * @package kebbet-cpt-publication
  */
 
-namespace cpt\kebbet\publication;
+namespace kebbet\cpt\publication;
 
 const POSTTYPE = 'publication';
 const SLUG     = 'publication';
