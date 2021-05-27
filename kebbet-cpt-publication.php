@@ -63,10 +63,10 @@ function load_textdomain() {
 function register() {
 
 	$labels_args       = array(
-		'name'                     => _x( 'Publication', 'Post Type General Name', 'kebbet-cpt-publication' ),
+		'name'                     => _x( 'Publications', 'Post Type General Name', 'kebbet-cpt-publication' ),
 		'singular_name'            => _x( 'Publication', 'Post Type Singular Name', 'kebbet-cpt-publication' ),
-		'menu_name'                => __( 'Publication', 'kebbet-cpt-publication' ),
-		'name_admin_bar'           => __( 'Publication-post', 'kebbet-cpt-publication' ),
+		'menu_name'                => __( 'Publications', 'kebbet-cpt-publication' ),
+		'name_admin_bar'           => __( 'Publication post', 'kebbet-cpt-publication' ),
 		'parent_item_colon'        => __( 'Parent post:', 'kebbet-cpt-publication' ),
 		'all_items'                => __( 'All posts', 'kebbet-cpt-publication' ),
 		'add_new_item'             => __( 'Add new', 'kebbet-cpt-publication' ),
@@ -88,8 +88,8 @@ function register() {
 		'items_list'               => __( 'Items list', 'kebbet-cpt-publication' ),
 		'items_list_navigation'    => __( 'Items list navigation', 'kebbet-cpt-publication' ),
 		'filter_items_list'        => __( 'Filter items list', 'kebbet-cpt-publication' ),
-		'archives'                 => __( 'Publication-posts archive', 'kebbet-cpt-publication' ),
-		'attributes'               => __( 'Publication-post attributes', 'kebbet-cpt-publication' ),
+		'archives'                 => __( 'Publication posts archive', 'kebbet-cpt-publication' ),
+		'attributes'               => __( 'Publication post attributes', 'kebbet-cpt-publication' ),
 		'item_published'           => __( 'Post published', 'kebbet-cpt-publication' ),
 		'item_published_privately' => __( 'Post published privately', 'kebbet-cpt-publication' ),
 		'item_reverted_to_draft'   => __( 'Post reverted to Draft', 'kebbet-cpt-publication' ),

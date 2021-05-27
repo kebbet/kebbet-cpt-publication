@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - Custom Post Type: Publication\n"
-"POT-Creation-Date: 2021-05-19 08:58+0200\n"
-"PO-Revision-Date: 2021-05-19 09:03+0200\n"
+"POT-Creation-Date: 2021-05-27 18:32+0200\n"
+"PO-Revision-Date: 2021-05-27 18:32+0200\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -43,7 +43,7 @@ msgstr[1] "%s publikationsinlägg"
 
 #: kebbet-cpt-publication.php:66
 msgctxt "Post Type General Name"
-msgid "Publication"
+msgid "Publications"
 msgstr "Publikationer"
 
 #: kebbet-cpt-publication.php:67
@@ -52,11 +52,11 @@ msgid "Publication"
 msgstr "Publikation"
 
 #: kebbet-cpt-publication.php:68
-msgid "Publication"
+msgid "Publications"
 msgstr "Publikationer"
 
 #: kebbet-cpt-publication.php:69
-msgid "Publication-post"
+msgid "Publication post"
 msgstr "Publikationsinlägg"
 
 #: kebbet-cpt-publication.php:70
@@ -140,11 +140,11 @@ msgid "Filter items list"
 msgstr "Filtrera objektlista"
 
 #: kebbet-cpt-publication.php:91
-msgid "Publication-posts archive"
+msgid "Publication posts archive"
 msgstr "Arkiv för publikationsinlägg"
 
 #: kebbet-cpt-publication.php:92
-msgid "Publication-post attributes"
+msgid "Publication post attributes"
 msgstr "Attribut för publikationsinlägg"
 
 #: kebbet-cpt-publication.php:93
@@ -265,6 +265,10 @@ msgstr[1] "%$2s inlägg återställdes från papperskorgen."
 #. Plugin Name of the plugin/theme
 msgid "Kebbet plugins - Custom Post Type: Publication"
 msgstr "Kebbet plugins - Anpassad inläggstyp: Publikation"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/kebbet/kebbet-cpt-publication"
+msgstr "https://github.com/kebbet/kebbet-cpt-publication"
 
 #. Description of the plugin/theme
 msgid "Registers a Custom Post Type."
