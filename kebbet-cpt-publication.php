@@ -151,7 +151,7 @@ function register() {
 function add_custom_capabilities() {
 
 	// Gets the administrator role
-	$admins = get_role( 'administrator' );
+	$admins = get_role( 'editor' );
 
 	// Add custom capavilities.
 	$admins->add_cap( 'edit_' . POSTTYPE );
