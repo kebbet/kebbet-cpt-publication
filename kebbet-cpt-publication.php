@@ -12,10 +12,11 @@
 
 namespace kebbet\cpt\publication;
 
-const POSTTYPE = 'publication';
-const SLUG     = 'publication';
-const ICON     = 'book';
-const MENUPOS  = 7;
+const POSTTYPE  = 'publication';
+const SLUG      = 'publication';
+const ICON      = 'book';
+const MENUPOS   = 7;
+const THUMBNAIL = true;
 
 /**
  * Link to ICONS
@@ -29,6 +30,9 @@ const MENUPOS  = 7;
 function init() {
 	load_textdomain();
 	register();
+	if ( true === THUMBNAIL ) {
+		add_theme_support( 'post-thumbnails' );
+	}
 }
 add_action( 'init', __NAMESPACE__ . '\init', 0 );
 
@@ -95,14 +99,23 @@ function register() {
 		'item_reverted_to_draft'   => __( 'Post reverted to Draft', 'kebbet-cpt-publication' ),
 		'item_scheduled'           => __( 'Post scheduled', 'kebbet-cpt-publication' ),
 		'item_updated'             => __( 'Post updated', 'kebbet-cpt-publication' ),
+		// 5.7 + 5.8
+		'filter_by_date'           => __( 'Filter posts by date', 'kebbet-cpt-publication' ),
+		'item_link'                => __( 'Publication post link', 'kebbet-cpt-publication' ),
+		'item_link_description'    => __( 'A link to a publication post', 'kebbet-cpt-publication' ),
 	);
-	$supports_args     = array(
+
+	$supports_args = array(
 		'author',
 		'title',
 		'editor',
-		'thumbnail',
 		'page-attributes',
 	);
+
+	if ( true === THUMBNAIL ) {
+		$supports_args = array_merge( $supports_args, array( 'thumbnail' ) );
+	}
+
 	$rewrite_args      = array(
 		'slug'       => SLUG,
 		'with_front' => false,
